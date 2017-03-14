@@ -19,6 +19,8 @@ def compare_rates(show_log,show_power,show_log_power,show_power2,show_exp,show_f
     n = np.linspace(1,n_max,n_max)
     fig = plt.figure(figsize=(20, 10))
     ax = fig.gca()
+    ax.axhline(0.,color='k',linewidth='1')
+    ax.axvline(0.,color='k',linewidth='1')
     
     if show_log: 
         f1 = np.log(n)**q
@@ -47,6 +49,4 @@ def compare_rates(show_log,show_power,show_log_power,show_power2,show_exp,show_f
     ax.set_xlabel('n')
     ax.set_ylabel(r'$a_n$')
     ax.xaxis.set_major_locator(MaxNLocator(integer=True))
-    ax.axhline(0.,color='k',linewidth='1')
-    ax.axvline(0.,color='k',linewidth='1')
     ax.legend(loc=2)
