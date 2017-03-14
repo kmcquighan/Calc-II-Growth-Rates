@@ -10,8 +10,6 @@ from matplotlib import pyplot as plt
 import matplotlib as mpl
 mpl.rcParams['font.size'] = 20
 from matplotlib.ticker import MaxNLocator
-import matplotlib as mpl
-mpl.rcParams['font.size'] = 20
     
 ########## MAIN FUNCTION ##############
 def compare_rates(show_log,show_power,show_log_power,show_power2,show_exp,show_factorial,show_power_exp,q,p,r,s,b,n_max):
@@ -19,8 +17,8 @@ def compare_rates(show_log,show_power,show_log_power,show_power2,show_exp,show_f
     n = np.linspace(1,n_max,n_max)
     fig = plt.figure(figsize=(20, 10))
     ax = fig.gca()
-    ax.axhline(0.,color='k',linewidth='1')
-    ax.axvline(0.,color='k',linewidth='1')
+    ax.axhline(0.,color='k',linewidth=1)
+    ax.axvline(0.,color='k',linewidth=1)
     
     if show_log: 
         f1 = np.log(n)**q
