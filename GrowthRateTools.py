@@ -1,7 +1,8 @@
 """
-Created on Wed Mar  4 14:17:03 2015
+Kelly McQuighan 2017
 
-A function for comparing the growth rates of various functions
+A function for comparing the growth rates of various functions. The user can decide
+which functions to display and also has a few parameters to play with. 
 
 @author: mcquighan
 """
@@ -11,7 +12,7 @@ import matplotlib as mpl
 mpl.rcParams['font.size'] = 20
 from matplotlib.ticker import MaxNLocator
     
-########## MAIN FUNCTION ##############
+
 def compare_rates(show_log,show_power,show_log_power,show_power2,show_exp,show_factorial,show_power_exp,q,p,r,s,b,n_max):
     
     n = np.linspace(1,n_max,n_max)
