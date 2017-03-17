@@ -4,3 +4,5 @@ The purpose of this Notebook is to explain what is meant by the "growth rate" of
 You can either download the files and run the Notebook on your local machine or you can launch the Notebook by clicking on the mybinder.org link below.
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/kmcquighan/calc-ii-growth-rates)
+
+If you download the files to your computer make sure that you have the GrowthRateTools.py file: these are the backend functions that create the simulations in the notebook.
